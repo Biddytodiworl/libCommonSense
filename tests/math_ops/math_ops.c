@@ -12,12 +12,14 @@
 
 int main(void) {
 	double num = 5.0;
+	int factorial = Factorial(5);
 	double square = Square(num);
 	double cube = Cube(num);
 
 	printf("num: %.2f\n", num);
 	printf("square: %.2f\n", square);
 	printf("cube: %.2f\n", cube);
+	printf("factorial: %d\n", factorial);
 
 	puts("Test successful.");
 	return 0;

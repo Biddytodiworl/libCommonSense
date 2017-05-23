@@ -52,3 +52,39 @@ double Square(const double num) {
 double Cube(const double num) {
 	return num * num * num;
 }
+
+/*
+	int Factorial(const int num)
+
+	DESCRIPTION:
+	Calculates the factorial of num.
+
+	PARAMETERS:
+	1) num
+		TYPE: int
+		DESCRIPTION:
+		The number whose factorial will be calculated.
+
+
+	RETURNS: int
+	The function returns the factorial of num. If num is 1 or 0, the function
+	return 1. If num is negative, the function returns 0.
+*/
+
+int Factorial(const int num) {
+	int i = 1;
+	int factorial = 1;
+
+	if (0 == num || 1 == num) {	/* The factorial of 1 and 0 is 1 */
+		return 1;
+	}
+	else if (num < 0) {
+		return 0;	/* Return 0 because negative factorials don't exist */
+	}
+
+	for (; i <= num; i++) {
+		factorial *= i;	/* Calculate factorial */
+	}
+
+	return factorial;
+}
