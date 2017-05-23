@@ -1,0 +1,2 @@
+This is the text that is found in the original copy of the file.
+You should see it appear verbatim in the copy.txt file.
