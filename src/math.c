@@ -82,7 +82,7 @@ int Factorial(const int num) {
 		return 0;	/* Return 0 because negative factorials don't exist */
 	}
 
-	for (; i <= num; i++) {
+	for (; i <= num; ++i) {
 		factorial *= i;	/* Calculate factorial */
 	}
 
