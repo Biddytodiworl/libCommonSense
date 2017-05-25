@@ -7,13 +7,14 @@
 	functionality and correctness.
 */
 
-#include "../../src/inc/io.h"
+#include "../../../src/inc/io.h"
 
 int main(void) {
 	long size = 0;	/* Holds the file size */
 	FILE *file = fopen("file.txt", "r");	/* The handle to the file whose size
 	is needed */
 
+	puts("File Size Retriever Test (by FILE variable)");
 	if (NULL == file) {
 		puts("Could not open file. File doesn't exist.");
 		puts("Test failed.");

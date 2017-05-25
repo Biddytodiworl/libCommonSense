@@ -7,11 +7,13 @@
 	functionality and correctness.
 */
 
-#include "../../src/inc/io.h"
+#include "../../../src/inc/io.h"
 
 int main(void) {
 	const char *file = "file.txt";	/* Name of the file whose size is needed */
 	long size = GetFileNameSize(file);	/* Contains the file size */
+
+	puts("File Size Retriever Test (by file name)");
 	if (0 == size) {
 		puts("Failed to get file size!");
 		puts("Test failed.");

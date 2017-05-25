@@ -7,7 +7,7 @@
 	and correctness.
 */
 
-#include "../../src/inc/io.h"
+#include "../../../src/inc/io.h"
 
 int main(void) {
 	const char *original = "original.txt";	/* Name of the original file */
